@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Fungal";
+  src: url("../fonts/FungalVF.woff2");
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner.ttf");
+}
+
+:root {
+    --tan: #EEE1CC;
+    --dark: #251F16;
+    --body: "Commissioner";
+    --display: "Fungal";
+}
+
+
+body {
+    background-color: var(--tan);
+    color: var(--dark);
+    font-family: var(--body);
+}
+
+
+.content-fixed {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+h1 {
+    font-family: var(--display);
+    font-size: 70px;
+}
+p {
+    font-family: var(--body);
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 20px;
+}

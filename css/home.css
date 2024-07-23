@@ -1,0 +1,56 @@
+@keyframes grow{
+  0% {
+    font-variation-settings: "THCK" 0, "grow" 0;
+  }
+  20%{
+    font-variation-settings: "THCK" 1000, "grow" 100;
+  }
+  50%{
+    font-variation-settings: "THCK" 800, "grow" 500;
+  }
+  100%{
+    font-variation-settings: "THCK" 500, "grow" 800;
+  }
+  100%{
+    font-variation-settings: "THCK" 400, "grow" 1000;
+  }
+}
+h1{
+    animation: grow 25s linear 0s alternate;
+    animation-iteration-count: infinite;
+}
+
+.entrylist {
+    border: 1px solid var(--dark);
+    grid-template-columns: auto;
+}
+.grid-item {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.grid-item.headercol {
+    border-bottom: 1px solid var(--dark);
+}
+.grid-item.headercol .grid-cell {
+    font-weight: 600;
+}
+.grid-cell {
+    border-collapse: collapse;
+    padding: 10px 0 10px 20px;
+}
+.grid-cell hr {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+.grid-cell a {
+    border: 1px solid var(--dark);
+    display: block;
+    padding: 4px 20px; 
+    max-width: 6em;
+}
+
+
+#starts {
+    background-image: url(../img/listTexture/1.png);
+    background-size: cover;
+}
