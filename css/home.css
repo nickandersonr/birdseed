@@ -16,7 +16,7 @@
   }
 }
 h1{
-    animation: grow 25s linear 0s alternate;
+    animation: grow 85s linear 0s alternate;
     animation-iteration-count: infinite;
 }
 
