@@ -17,7 +17,7 @@
 }
 h1{
     animation: grow 85s linear 0s alternate;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; 
 }
 
 .entrylist {
