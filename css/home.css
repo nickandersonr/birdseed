@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Louise-Regular";
+  src: url("../fonts/Louise-Regular.woff2");
+}
+
+:root {
+    --chart: "Louise-Regular";
+}
+
+
 @keyframes grow{
   0% {
     font-variation-settings: "THCK" 0, "grow" 0;
@@ -22,8 +32,52 @@ h1{
 
 .entrylist {
     border: 1px solid var(--dark);
-    grid-template-columns: auto;
+    grid-template-columns: 4fr 1fr 1fr;
+    margin-top: 80px;
+    padding-bottom: 14px;
 }
+
+.vertrule {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+}
+.vertrule p {
+    flex-grow: 1;
+    rotate: -90deg;
+    font-size: 14px;
+    text-align: center;
+}
+.vertrule .vertical {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-grow: 4;
+    min-height: 60px;
+    margin: 20px;
+}
+.vertrule .vertical hr {
+    height: 100%;
+}
+.arrowhead {
+    position: absolute;
+}
+#arrowhead-bottom {
+    rotate: 180deg;
+    bottom: -15px;
+}
+
+
+.notescolumn {
+    display: flex;
+    justify-content: center;
+}
+.notes {
+    /*font-family: var(--chart);*/
+    font-variation-settings: 'FLAR' 100, 'VOLM' 100;
+}
+
+
 .grid-item {
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -46,7 +100,7 @@ h1{
     border: 1px solid var(--dark);
     display: block;
     padding: 4px 20px; 
-    max-width: 6em;
+    /*max-width: 6em;*/
 }
 
 
