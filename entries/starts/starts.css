@@ -1,0 +1,10 @@
+:root {
+    --white: #FFF;
+    --light: #e9e9e9;
+    --dark: #302F2A;
+    --body: "Commissioner";
+    --display: "Fungal";
+}
+h1 {
+    font-family: var(--body);
+}

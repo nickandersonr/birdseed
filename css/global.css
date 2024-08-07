@@ -42,6 +42,10 @@ body {
     margin: 0 auto;
     padding: 0 1em;
 }
+.tightText {
+    margin: 0 auto;
+    max-width: 600px;
+}
 p {
     font-family: var(--body);
     font-weight: 300;
